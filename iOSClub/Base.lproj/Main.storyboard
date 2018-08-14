@@ -274,16 +274,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="brand" destination="nBM-z7-zn9" id="N60-6I-QUa"/>
-                        <outlet property="changPlate" destination="pyF-rj-bWP" id="qbg-Jg-XbJ"/>
-                        <outlet property="comsume" destination="vQq-2c-A2T" id="zzM-4F-Ytu"/>
-                        <outlet property="drive" destination="PhG-qb-hZi" id="RGK-6K-NVt"/>
-                        <outlet property="good" destination="Ris-co-4Ht" id="eT2-Yh-Mxi"/>
-                        <outlet property="miles" destination="gOU-GF-aYI" id="9uG-mf-8TN"/>
-                        <outlet property="passenger" destination="RDL-hL-QvK" id="eXZ-Gy-mC3"/>
-                        <outlet property="plate" destination="ffp-6q-fhK" id="Zbg-ew-8bw"/>
-                        <outlet property="slider" destination="wVr-ku-PVe" id="OPf-bd-Q4b"/>
-                        <outlet property="stock" destination="Ip5-7P-m2o" id="GTJ-WO-Pl9"/>
+                        <outlet property="brand" destination="nBM-z7-zn9" id="WGa-Xo-9gY"/>
+                        <outlet property="consume" destination="vQq-2c-A2T" id="ft8-ke-7Ct"/>
+                        <outlet property="good" destination="Ris-co-4Ht" id="kwA-Ox-fNu"/>
+                        <outlet property="miles" destination="gOU-GF-aYI" id="kmG-cT-LSm"/>
+                        <outlet property="passenger" destination="RDL-hL-QvK" id="DkU-GQ-mmM"/>
+                        <outlet property="plate" destination="ffp-6q-fhK" id="WZq-A1-4hh"/>
+                        <outlet property="slider" destination="wVr-ku-PVe" id="LeO-Nq-JKm"/>
+                        <outlet property="stock" destination="Ip5-7P-m2o" id="BQ4-Lp-Sud"/>
+                        <outlet property="tpye" destination="WDP-4v-eaV" id="Vuj-Z3-1y0"/>
                         <outlet property="type" destination="WDP-4v-eaV" id="Ju1-Sf-OLs"/>
                     </connections>
                 </viewController>

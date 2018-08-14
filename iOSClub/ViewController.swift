@@ -10,10 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var type: UILabel!
     @IBOutlet weak var brand: UILabel!
     @IBOutlet weak var plate: UITextField!
-    @IBOutlet weak var comsume: UILabel!
+    @IBOutlet weak var consume: UILabel!
     @IBOutlet weak var passenger: UILabel!
     @IBOutlet weak var good: UILabel!
     @IBOutlet weak var stock: UILabel!
@@ -44,7 +45,7 @@ class ViewController: UIViewController {
         type.text = "汽車"
         brand.text = cars[choose].getBrand()
         plate.text = cars[choose].getPlate()
-        comsume.text = String(cars[choose].getConsume())
+        consume.text = String(cars[choose].getConsume())
         passenger.text = String(cars[choose].getPassengers())
         good.text = String(cars[choose].getGood())
         stock.text = String(cars[choose].getStock())
