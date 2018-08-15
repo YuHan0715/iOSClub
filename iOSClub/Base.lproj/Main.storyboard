@@ -32,9 +32,6 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDP-4v-eaV">
                                                 <rect key="frame" x="103" y="0.0" width="42" height="31.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="42" id="QrQ-k3-3DV"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -82,7 +79,6 @@
                                                 <rect key="frame" x="198" y="0.0" width="31" height="31.5"/>
                                                 <state key="normal" title="更換"/>
                                                 <connections>
-                                                    <action selector="changPlate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vno-CV-lHD"/>
                                                     <action selector="changePlate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S0j-er-FSG"/>
                                                 </connections>
                                             </button>
@@ -282,8 +278,7 @@
                         <outlet property="plate" destination="ffp-6q-fhK" id="WZq-A1-4hh"/>
                         <outlet property="slider" destination="wVr-ku-PVe" id="LeO-Nq-JKm"/>
                         <outlet property="stock" destination="Ip5-7P-m2o" id="BQ4-Lp-Sud"/>
-                        <outlet property="tpye" destination="WDP-4v-eaV" id="Vuj-Z3-1y0"/>
-                        <outlet property="type" destination="WDP-4v-eaV" id="Ju1-Sf-OLs"/>
+                        <outlet property="type" destination="WDP-4v-eaV" id="4pi-wg-UCb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

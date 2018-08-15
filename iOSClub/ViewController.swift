@@ -21,19 +21,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var miles: UILabel!
     @IBOutlet weak var slider: UISlider!
     
-    var cars = [Car(brand:"Honda", plate: "AP-123"),
-                Car(brand:"Toyota",plate: "GG-3B0"),
-                Car(brand:"Mazda", plate: "MM-204"),
-                Car(brand:"Ford", plate: "QQ-506"),
-                Car(brand:"Lexus", plate: "RR-693")]
+//    var cars = [Car(brand:"Honda", plate: "AP-123"),
+//                Car(brand:"Toyota",plate: "GG-3B0"),
+//                Car(brand:"Mazda", plate: "MM-204"),
+//                Car(brand:"Ford", plate: "QQ-506"),
+//                Car(brand:"Lexus", plate: "RR-693")]
+    
+    var cars: [Car] = []
     
     var choose = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        cars.append(Truck(brand: "Handa", plate: "AP-123"))
+        cars.append(Rv(brand: "Toyota", plate: "GG-3B0"))
+        cars.append(Truck(brand: "Mazda", plate: "MM-204"))
+        cars.append(Rv(brand: "Ford", plate: "QQ-506"))
+        cars.append(Truck(brand: "Lexus", plate: "RR-693"))
+        
         slider.minimumValue = 0
         slider.maximumValue = Float(cars.count - 1)
         refresh()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,7 +53,7 @@ class ViewController: UIViewController {
     }
     
     func  refresh() {
-        type.text = "汽車"
+        type.text = cars[choose].getType()
         brand.text = cars[choose].getBrand()
         plate.text = cars[choose].getPlate()
         consume.text = String(cars[choose].getConsume())
@@ -94,3 +105,14 @@ class ViewController: UIViewController {
     }
 }
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
